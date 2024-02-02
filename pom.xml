@@ -27,6 +27,15 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- Automatically restarts application when code is updated -->
+        <!-- To make it, we need to do the below settings in IntelliJ Idea: -->
+        <!-- Settings > Build, Execution, Deployment > Compiler > Check box: Build project automatically ... -->
+        <!-- Settings > Advanced Settings > Check box: Allow auto-make to ... -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
