@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.zky</groupId>
-    <artifactId>demo-java</artifactId>
+    <artifactId>demo-spring</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>demo-java</name>
     <description>demo-java</description>
@@ -54,5 +54,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

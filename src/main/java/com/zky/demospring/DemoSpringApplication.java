@@ -1,13 +1,13 @@
-package com.zky.demojava;
+package com.zky.demospring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoJavaApplication {
+public class DemoSpringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoJavaApplication.class, args);
+        SpringApplication.run(DemoSpringApplication.class, args);
     }
 
 }

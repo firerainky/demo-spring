@@ -1,13 +1,12 @@
-package com.zky.demojava.controller;
+package com.zky.demospring.controller;
 
-import com.zky.demojava.pojo.LombokPOJO;
+import com.zky.demospring.pojo.LombokPOJO;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    @RequestMapping(value = "/hello", method = RequestMethod.POST)
+    @RequestMapping("/hello")
     public String hello(String name) {
         LombokPOJO pojo = new LombokPOJO();
         pojo.test();
