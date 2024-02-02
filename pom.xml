@@ -28,10 +28,18 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!-- Automatically restarts application when code is updated -->
         <!-- To make it, we need to do the below settings in IntelliJ Idea: -->
         <!-- Settings > Build, Execution, Deployment > Compiler > Check box: Build project automatically ... -->
         <!-- Settings > Advanced Settings > Check box: Allow auto-make to ... -->
+        <!-- Using 2 classloaders to reach this function. One is non-reload classloader for unchanged classes like 3rd party ones. -->
+        <!-- Another is restart classloader for changed classes. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
